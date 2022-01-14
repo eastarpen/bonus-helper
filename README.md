@@ -1,5 +1,7 @@
 # bonus-helper
 
+make bonus easily get!
+
 ## TODO
 
 - [ ] 配置面板
@@ -10,3 +12,10 @@
 - [ ] 对种子自动点赞
 
 ## USAGE
+
+## version
+
+### 0.1 
+
+1. 完成 A值计算与添加
+2. 完成简单适配
