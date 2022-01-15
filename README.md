@@ -14,9 +14,9 @@ make bonus easily get!
 
 ## USAGE
 
-## VERSION
+## CHANGELOG
 
-### 0.1 
+1. 2022/1/14 version 0.1.0
 
-1. 完成 A值计算与添加
-2. 完成简单适配
+ * 完成 A值计算与添加
+ * 完成简单适配
