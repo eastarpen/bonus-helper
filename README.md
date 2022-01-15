@@ -16,7 +16,9 @@ make bonus easily get!
 
 ## CHANGELOG
 
-1. 2022/1/14 version 0.1.0
+### version 0.1
 
- * 完成 A值计算与添加
- * 完成简单适配
+1. 2022/1/14 发布版本 version 0.1.0 功能包括
+
+   * 完成 A值计算与添加
+   * 完成简单适配
