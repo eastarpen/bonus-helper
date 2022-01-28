@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         bonus-helper
 // @namespace    http://tampermonkey.net/
-// @version      0.2.0
+// @version      0.2.1
 // @description  try to take over the world!
 // @author       Eastarpen
-// @match        https://audiences.me/torrents.php*
-// @match        https://pterclub.com/torrents.php*
-// @icon         https://www.google.com/s2/favicons?domain=audiences.me
+// @match             *://*/*
+// @icon         https://eastarpen.github.io/img/favicon.ico
 // @grant        GM_setValue
 // @grant        GM_getValue
 // ==/UserScript==
@@ -23,7 +22,7 @@ let T, N, B, W
 // 配置传入的站点
 function get_sites_info_str(host) {
     var sites_info = {'audiences.me': '"T":4,"N":7,"W":1.5', 'pt.btschool.club': '"T":200,"N":7,"W":1', 'pterclub.com': '"T":26,"N":7,"W":1', 'pt.msg.vg': '"T":4,"N":7,"W":1', 'kp.m-team.cc': '"T":4,"N":7,"W":1', 'www.hddolby.com': '"T":4,"N":7,"W":1', 'hdatmos.club': '"T":4,"N":7,"W":1', 'www.hdarea.co': '"T":8,"N":20,"W":1'}
-    if (sites_info.hasOwnProperty(host)) return sites_info[host]
+    if (sites_info.hasOwnProperty(host)) return '{'+sites_info[host]+'}'
     return null
 }
 
@@ -32,7 +31,7 @@ function load_constant(host) {
     // data = '{"T":4, "N":7, "W":1.5}'
     var sites_info_str = get_sites_info_str(host)
     if(sites_info_str==null) return false
-    sites_info = JSON.parse(sites_info_str)
+    let sites_info = JSON.parse(sites_info_str)
     T = sites_info.T
     N = sites_info.N
     W = sites_info.W
