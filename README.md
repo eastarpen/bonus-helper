@@ -26,3 +26,5 @@ make bonus easily get!
    
    * 更改网页配置逻辑, 取消 GM_setValue, GM_getValue 的使用
    * 添加 sites.info 文件
+
+3. 2022/1/28 version 0.2.2 定制各站点css 选择器
