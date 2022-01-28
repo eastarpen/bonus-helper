@@ -6,7 +6,8 @@ if __name__ == '__main__':
     with open("raw_sites.info", "r") as fin:
         for line in fin.readlines():
             line = line.split()
-            if len(line) == 3: continue # skip tip information
-            info[line[0]] = '"T":{},"N":{},"W":{}'.format(line[1], line[2], line[3])
+            if len(line) <= 4: continue # skip tip information
+            for i in range(5, len(line)): line[4] += ' ' + line[i] # merge SELECTOR
+            info[line[0]] = '"T":{},"N":{},"W":{},"SELECTOR":"{}"'.format(line[1], line[2], line[3], line[4])
     with open("sites.info", "w") as fout:
         fout.write(str(info)) 

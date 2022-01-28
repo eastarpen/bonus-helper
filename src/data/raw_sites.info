@@ -1,9 +1,9 @@
-T N W
-audiences.me 4 7 1.5
-pt.btschool.club 200 7 1
-pterclub.com 26 7 1
-pt.msg.vg 4 7 1
-kp.m-team.cc 4 7 1
-www.hddolby.com 4 7 1
-hdatmos.club 4 7 1
-www.hdarea.co 8 20 1
+T N W SELECTOR
+audiences.me 4 7 1.5 #torrenttable > tbody
+pt.btschool.club 200 7 1 #outer > table > tbody > tr > td > table > tbody
+pterclub.com 26 7 1 #torrenttable > tbody
+pt.msg.vg 4 7 1 #outer > table > tbody > tr > td > table > tbody
+kp.m-team.cc 4 7 1 #form_torrent > table > tbody
+www.hddolby.com 4 7 1 #torrenttable > tbody
+hdatmos.club 4 7 1 #torrenttable > tbody
+www.hdarea.co 8 20 1 #outer > table > tbody > tr > td > table:nth-child(11) > tbody
