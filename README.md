@@ -22,3 +22,7 @@ make bonus easily get!
 
    * 完成 A值计算与添加
    * 完成简单适配
+2. 2022/1/28 发布版本 version 0.2.0 
+   
+   * 更改网页配置逻辑, 取消 GM_setValue, GM_getValue 的使用
+   * 添加 sites.info 文件
