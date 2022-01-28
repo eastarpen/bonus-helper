@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         bonus-helper
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.1.0
 // @description  try to take over the world!
 // @author       Eastarpen
 // @match        https://audiences.me/torrents.php*
